@@ -2,7 +2,7 @@ import pytesseract
 from PIL import Image, ImageDraw, ImageFont
 import fitz
 
-pages = fitz.open("comp.pdf")
+pages = fitz.open("form.pdf")
 image = pages[0]
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
